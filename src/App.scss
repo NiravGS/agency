@@ -123,35 +123,11 @@ section {
   }
 
   @media(max-width: 767px) and (min-width:320px) {
-    margin: 20px 0;
+    margin: 50px 0;
   }
 }
 
-.Title {
-  text-align: center;
 
-  h1 {
-    font-size: 40px;
-
-    @media(max-width:767px) {
-      font-size: 35px;
-    }
-  }
-
-  p {
-    font-size: 17px;
-    line-height: 30px;
-    max-width: 622px;
-    margin: 40px auto;
-    color: #33475b;
-    font-family: FuturaPTBook;
-
-    @media(max-width:767px) {
-      font-size: 16px;
-      margin: 20px auto;
-    }
-  }
-}
 
 .loaderWeb {
   display: flex;
@@ -198,9 +174,9 @@ section {
   left: -33%;
   top: -33%;
   height: 150%;
-  background: -moz-linear-gradient(-45deg, rgb(10, 61, 202) 0%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
-  background: -webkit-linear-gradient(-45deg, rgba(214, 22, 22, 1) 0%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
-  background: linear-gradient(135deg, rgba(214, 22, 22, 1) 0%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)
+  background: -moz-linear-gradient(-45deg, #ff6064 0%, #ff6064 50%, #ff6064 50%, #ff6064 50%, #ff6064 100%);
+  background: -webkit-linear-gradient(-45deg, #ff6064 0%, #ff6064 50%, #ff6064 50%, #ff6064 50%, #ff6064 100%);
+  background: linear-gradient(135deg, #ff6064 0%, #ff6064 50%, #ff6064 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)
 }
 
 .loader-right {
@@ -209,9 +185,9 @@ section {
   right: -42%;
   bottom: -42%;
   height: 160%;
-  background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 100%);
-  background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 100%);
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 100%)
+  background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, #ff6064 50%, #ff6064 50%, #ff6064 100%);
+  background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, #ff6064 50%, #ff6064 50%, #ff6064 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, #ff6064 50%, #ff6064 50%, #ff6064 100%)
 }
 
 .loader-center {
@@ -372,26 +348,83 @@ section {
   -webkit-animation-name: slideInRightReverse;
   animation-name: slideInRightReverse
 }
+
 @-webkit-keyframes zoomInCustom {
   from {
-      opacity: 1
+    opacity: 1
   }
 
   100% {
-      opacity: 0;
-      -webkit-transform: scale3d(2, 2, 2);
-      transform: scale3d(2, 2, 2)
+    opacity: 0;
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2)
   }
 }
 
 @keyframes zoomInCustom {
   from {
-      opacity: 1
+    opacity: 1
   }
 
   100% {
-      opacity: 0;
-      -webkit-transform: scale3d(2, 2, 2);
-      transform: scale3d(2, 2, 2)
+    opacity: 0;
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2)
+  }
+}
+
+.Title {
+  text-align: center;
+
+  h1 {
+    font-size: 40px;
+
+    @media(max-width:767px) {
+      font-size: 35px;
+    }
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 30px;
+    max-width: 622px;
+    margin: 40px auto;
+    color: #33475b;
+    font-family: FuturaPTBook;
+
+    @media(max-width:767px) {
+      font-size: 16px;
+      margin: 20px auto;
+    }
+  }
+}
+
+.SectionBtn {
+  margin-top: 40px;
+
+  @media(max-width:767px) {
+    text-align: center;
+  }
+
+  a {
+    background-color: #ff6064;
+    border-radius: 5px;
+    padding: 14px 39px;
+    color: #fff;
+    transition: all 0.3s ease-in-out !important;
+    -webkit-transition: all 0.3s ease-in-out !important;
+
+    &:hover {
+      box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.25);
+      transform: translateY(-5px);
+      -webkit-transform: translateY(-5px);
+      color: #fff;
+    }
+
+    @media(max-width:1199px) and(max-width:992px) {
+      padding: 14px 14px;
+    }
+
   }
 }

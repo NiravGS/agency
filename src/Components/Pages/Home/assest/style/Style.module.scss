@@ -223,29 +223,7 @@
         .LeftSection {
             text-align: center;
 
-            .SectionBtn {
-                margin-top: 40px;
 
-                a {
-                    background-color: #ff6064;
-                    border-radius: 5px;
-                    padding: 14px 39px;
-                    color: #fff;
-                    transition: all 0.3s ease-in-out !important;
-                    -webkit-transition: all 0.3s ease-in-out !important;
-
-                    &:hover {
-                        box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
-                        box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.25);
-                        transform: translateY(-5px);
-                        -webkit-transform: translateY(-5px);
-                    }
-
-                    @media(max-width:1199px) and(max-width:9925px) {
-                        padding: 14px 14px;
-                    }
-                }
-            }
         }
 
         .RightSection {
@@ -337,14 +315,14 @@
                 transition: all .35s cubic-bezier(.38, 3, .57, 1.6);
             }
 
-            @media(max-width:767px) {
+            @media(max-width:991px) {
                 text-align: center;
             }
 
             .detailsImg {
                 width: 60px;
 
-                @media(max-width:767px) {
+                @media(max-width:991px) {
                     margin: auto;
                 }
 
@@ -363,7 +341,7 @@
                 max-width: 274px;
                 width: 100%;
 
-                @media(max-width:767px) {
+                @media(max-width:991px) {
                     margin: auto;
                 }
             }
@@ -383,7 +361,12 @@
     background-color: transparent;
     background-image: linear-gradient(180deg, #C8E7FF 0%, #ffffff 100%);
     padding: 140px 0px 0px 0px;
-
+    @media(max-width:991px){
+        padding: 80px 0px 0px 0px;
+    }
+    @media(max-width:767px){
+        padding: 50px 0px 0px 0px;
+    }
     .RightContent {
         img {
             &:hover {
@@ -446,6 +429,117 @@
                     width: 100%;
                     max-width: 374px;
                 }
+            }
+        }
+    }
+}
+
+#Inventory {
+    .RightContent {
+        img {
+            &:hover {
+                transition: all 0.5s ease-in-out;
+                transform: translatex(-10px);
+            }
+        }
+    }
+
+    .LeftContent {
+        .allLine {
+            display: flex;
+
+            .leftSpaceLine {
+                width: 10px;
+                height: 4px;
+                background-color: #ff6064;
+                margin-right: 5px;
+            }
+
+            .leftLine {
+                width: 35px;
+                height: 4px;
+                background-color: #ff6064;
+            }
+
+        }
+
+        .Title {
+            text-align: left;
+            margin-top: 24px;
+
+            P {
+                max-width: 427px;
+                margin: 40px 0;
+            }
+        }
+
+        .iconCheck {
+            svg {
+                fill: #3cbe6f;
+                font-size: 18px;
+            }
+        }
+
+        .CheckContent {
+            display: flex;
+
+            .Content {
+                margin-left: 24px;
+
+                h4 {
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 15px;
+                    margin-top: 11px;
+                    color: #5e656c;
+                    width: 100%;
+                    max-width: 374px;
+                }
+            }
+        }
+    }
+}
+
+#Customers {
+    .CustomersImg{
+        @media(max-width:991px){
+            text-align: center;
+        }
+    }
+    .CustomerSug {
+        .CustomerCard {
+            box-shadow: 0px 4px 80px -33px #B6D4EC;
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            padding: 37px 40px;
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 444px;
+            margin: auto;
+
+            h5 {
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #5e656c;
+                width: 100%;
+                max-width: 352px;
+            }
+        }
+
+        .CardMain {
+            background-color: #ff6064;
+            border-radius: 10px;
+            max-width: 485px;
+
+            h5 {
+                color: #fff;
+            }
+
+            p {
+                color: #fff;
             }
         }
     }
