@@ -1,0 +1,397 @@
+@font-face {
+  font-family: FuturaPT;
+  src: url('./assets/font/FuturaPTDemi.otf');
+}
+
+@font-face {
+  font-family: FuturaPTBold;
+  src: url('./assets/font/FuturaPTBold.otf');
+}
+
+@font-face {
+  font-family: FuturaPTBook;
+  src: url('./assets/font/FuturaPTBook.otf');
+}
+
+@font-face {
+  font-family: FuturaPTCondBold;
+  src: url('./assets/font/FuturaPTCondBold.otf');
+}
+
+@font-face {
+  font-family: FuturaPTCondBoldOblique;
+  src: url('./assets/font/FuturaPTCondBoldOblique.otf');
+}
+
+@font-face {
+  font-family: FuturaPTCondBook;
+  src: url('./assets/font/FuturaPTCondBook.otf');
+}
+
+@font-face {
+  font-family: FuturaPTCondExtraBold;
+  src: url('./assets/font/FuturaPTCondExtraBold.otf');
+}
+
+@font-face {
+  font-family: FuturaPTCondExtraBoldOblique;
+  src: url('./assets/font/FuturaPTCondExtraBoldOblique.otf');
+}
+
+@font-face {
+  font-family: FuturaPTCondMedium;
+  src: url('./assets/font/FuturaPTCondMedium.otf');
+}
+
+@font-face {
+  font-family: FuturaPTCondMediumOblique;
+  src: url('./assets/font/FuturaPTCondMediumOblique.otf');
+}
+
+@font-face {
+  font-family: FuturaPTDemiOblique;
+  src: url('./assets/font/FuturaPTDemiOblique.otf');
+}
+
+@font-face {
+  font-family: FuturaPTExtraBold;
+  src: url('./assets/font/FuturaPTExtraBold.otf');
+}
+
+@font-face {
+  font-family: FuturaPTExtraBoldOblique;
+  src: url('./assets/font/FuturaPTExtraBoldOblique.otf');
+}
+
+@font-face {
+  font-family: FuturaPTHeavy;
+  src: url('./assets/font/FuturaPTHeavy.otf');
+}
+
+@font-face {
+  font-family: FuturaPTHeavyOblique;
+  src: url('./assets/font/FuturaPTHeavyOblique.otf');
+}
+
+@font-face {
+  font-family: FuturaPTLight;
+  src: url('./assets/font/FuturaPTLight.otf');
+}
+
+@font-face {
+  font-family: FuturaPTMedium;
+  src: url('./assets/font/FuturaPTMedium.otf');
+}
+
+@font-face {
+  font-family: FuturaPTMediumOblique;
+  src: url('./assets/font/FuturaPTMediumOblique.otf');
+}
+
+
+
+
+body {
+  font-family: FuturaPT !important;
+
+  a {
+    color: #000;
+    text-decoration: none !important;
+  }
+
+  h1,
+  h1,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+
+  p {
+    font-family: FuturaPTBook;
+  }
+}
+
+section {
+  margin: 150px 0;
+
+  @media(max-width: 991px) and (min-width:768px) {
+    margin: 80px 0;
+    padding: 0 10px;
+  }
+
+  @media(max-width: 767px) and (min-width:320px) {
+    margin: 20px 0;
+  }
+}
+
+.Title {
+  text-align: center;
+
+  h1 {
+    font-size: 40px;
+
+    @media(max-width:767px) {
+      font-size: 35px;
+    }
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 30px;
+    max-width: 622px;
+    margin: 40px auto;
+    color: #33475b;
+    font-family: FuturaPTBook;
+
+    @media(max-width:767px) {
+      font-size: 16px;
+      margin: 20px auto;
+    }
+  }
+}
+
+.loaderWeb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 999;
+  -webkit-transition-property: display;
+  transition-property: display;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out
+}
+
+.loader.loader-hide {
+  display: none
+}
+
+.loader-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  width: 125px;
+  height: 95px
+}
+
+.loader-left {
+  width: 150%;
+  position: absolute;
+  left: -33%;
+  top: -33%;
+  height: 150%;
+  background: -moz-linear-gradient(-45deg, rgb(10, 61, 202) 0%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(214, 22, 22, 1) 0%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(135deg, rgba(214, 22, 22, 1) 0%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)
+}
+
+.loader-right {
+  width: 160%;
+  position: absolute;
+  right: -42%;
+  bottom: -42%;
+  height: 160%;
+  background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 100%);
+  background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 50%, rgba(214, 22, 22, 1) 100%)
+}
+
+.loader-center {
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out
+}
+
+.loader-center.loader-logo-hide {
+  -webkit-transform: scale(0);
+  transform: scale(0)
+}
+
+.loader-center img {
+  max-width: 80%
+}
+
+.loader-center h3 {
+  color: #fff;
+  font-family: ubuntu-regular;
+  letter-spacing: 8px;
+  font-size: 16px;
+  margin-top: 8px;
+  position: absolute;
+  bottom: 0
+}
+
+.animated {
+  -webkit-animation-duration: .9s;
+  animation-duration: .9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft
+}
+
+@-webkit-keyframes slideInLeftReverse {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+@keyframes slideInLeftReverse {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible
+  }
+
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0)
+  }
+}
+
+.slideInLeftReverse {
+  -webkit-animation-name: slideInLeftReverse;
+  animation-name: slideInLeftReverse
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight
+}
+
+@-webkit-keyframes slideInRightReverse {
+  from {
+    -webkit-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible
+  }
+
+  to {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0)
+  }
+}
+
+@keyframes slideInRightReverse {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible
+  }
+
+  to {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0)
+  }
+}
+
+.slideInRightReverse {
+  -webkit-animation-name: slideInRightReverse;
+  animation-name: slideInRightReverse
+}
+@-webkit-keyframes zoomInCustom {
+  from {
+      opacity: 1
+  }
+
+  100% {
+      opacity: 0;
+      -webkit-transform: scale3d(2, 2, 2);
+      transform: scale3d(2, 2, 2)
+  }
+}
+
+@keyframes zoomInCustom {
+  from {
+      opacity: 1
+  }
+
+  100% {
+      opacity: 0;
+      -webkit-transform: scale3d(2, 2, 2);
+      transform: scale3d(2, 2, 2)
+  }
+}
