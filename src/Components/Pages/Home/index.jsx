@@ -6,6 +6,7 @@ import Details from "./Elements/Details";
 import Support from "./Elements/Support"
 import Inventory from "./Elements/Inventory"
 import Customers from "./Elements/Customers"
+import Demofeature from "./Elements/Demofeature"
 
 // scss
 import Style from "./assest/style/Style.module.scss";
@@ -33,6 +34,9 @@ const Footer = () => {
          </section>
          <section id={Style.Customers}>
             <Customers />
+         </section>
+         <section id={Style.Demofeature}>
+            <Demofeature />
          </section>
       </>
    );

@@ -45,14 +45,16 @@ function App() {
                         : "loader-left slideInLeft animated"
                   }
                />
-               <div className="loader-center animated">
-                  <h3>LOADING </h3>
+               <div className="loader-center animated round">
+                  <h3>G-Code</h3>
                </div>
-               <div className={
+               <div
+                  className={
                      isout
                         ? "loader-right animated slideInRightReverse"
                         : "loader-right slideInRight animated"
-                  } />
+                  }
+               />
             </div>
          ) : (
             <BrowserRouter>

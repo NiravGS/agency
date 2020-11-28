@@ -75,32 +75,32 @@ const LogoSlider = () => {
                   nav
                   {...options}
                >
-                  <div class="item">
+                  <div className="item">
                      <div className={Style.logoImg}>
                         <img src={Logo1} alt="" className={`${"img-fluid"}`} />
                      </div>
                   </div>
-                  <div class="item">
+                  <div className="item">
                      <div className={Style.logoImg}>
                         <img src={Logo2} alt="" className={`${"img-fluid"}`} />
                      </div>
                   </div>
-                  <div class="item">
+                  <div className="item">
                      <div className={Style.logoImg}>
                         <img src={Logo3} alt="" className={`${"img-fluid"}`} />
                      </div>
                   </div>
-                  <div class="item">
+                  <div className="item">
                      <div className={Style.logoImg}>
                         <img src={Logo4} alt="" className={`${"img-fluid"}`} />
                      </div>
                   </div>
-                  <div class="item">
+                  <div className="item">
                      <div className={Style.logoImg}>
                         <img src={Logo5} alt="" className={`${"img-fluid"}`} />
                      </div>
                   </div>
-                  <div class="item">
+                  <div className="item">
                      <div className={Style.logoImg}>
                         <img src={Logo6} alt="" className={`${"img-fluid"}`} />
                      </div>
