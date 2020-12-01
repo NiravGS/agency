@@ -10,7 +10,8 @@ const Customers = () => {
    return (
       <>
          <Container>
-            <div className={Style.CustomersContent}>
+            <div className={Style.CustomersContent} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                <div className={Style.Title}>
                   <h1>The qik impact on our customers</h1>
                   <p>

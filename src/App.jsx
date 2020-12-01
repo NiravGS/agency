@@ -22,9 +22,19 @@ import Services from "./Components/Pages/Services";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
+// Aos
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
    const [isLoaded, setIsLoaded] = useState(true);
    const [isout, setisout] = useState(false);
+
+   useEffect(() => {
+      AOS.init({
+         duration: 2000,
+      });
+   }, []);
 
    useEffect(() => {
       setTimeout(() => {

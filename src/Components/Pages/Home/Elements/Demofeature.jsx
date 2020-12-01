@@ -6,7 +6,8 @@ import Style from "../assest/style/Style.module.scss";
 const Demofeature = () => {
    return (
       <>
-         <div className={Style.demoFeature}>
+         <div className={Style.demoFeature} data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
             <Container>
                <div className={Style.Title}>
                   <h1>So, what brings you here today?</h1>

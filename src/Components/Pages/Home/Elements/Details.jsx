@@ -15,8 +15,10 @@ import Style from "../assest/style/Style.module.scss";
 const Details = () => {
    return (
       <>
-         <Container>
-            <div className={Style.Title}>
+         <Container > 
+            <div
+               className={Style.Title}
+            >
                <h1>Software integrations</h1>
                <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elitd do
@@ -26,7 +28,7 @@ const Details = () => {
             </div>
             <div className={Style.detailArea}>
                <Row>
-                  <Col lg={4} md={6} className={Style.detailsCard}>
+                  <Col lg={4} md={6} className={Style.detailsCard}    data-aos="fade-right">
                      <div className={Style.detailContent}>
                         <div className={Style.detailsImg}>
                            <img
@@ -44,7 +46,7 @@ const Details = () => {
                         </div>
                      </div>
                   </Col>
-                  <Col lg={4} md={6} className={Style.detailsCard}>
+                  <Col lg={4} md={6} className={Style.detailsCard}  data-aos="fade-right">
                      <div className={Style.detailContent}>
                         <div className={Style.detailsImg}>
                            <img
@@ -62,7 +64,7 @@ const Details = () => {
                         </div>
                      </div>
                   </Col>
-                  <Col lg={4} md={6} className={Style.detailsCard}>
+                  <Col lg={4} md={6} className={Style.detailsCard}  data-aos="fade-right">
                      <div className={Style.detailContent}>
                         <div className={Style.detailsImg}>
                            <img
@@ -80,7 +82,12 @@ const Details = () => {
                         </div>
                      </div>
                   </Col>
-                  <Col lg={4} md={6} className={`${Style.SecondRow} ${Style.detailsCard}`}>
+                  <Col
+                     lg={4}
+                     md={6}
+                     className={`${Style.SecondRow} ${Style.detailsCard}`}
+                     data-aos="fade-left"
+                  >
                      <div className={Style.detailContent}>
                         <div className={Style.detailsImg}>
                            <img
@@ -98,7 +105,12 @@ const Details = () => {
                         </div>
                      </div>
                   </Col>
-                  <Col lg={4} md={6} className={`${Style.SecondRow} ${Style.detailsCard}`}>
+                  <Col
+                     lg={4}
+                     md={6}
+                     className={`${Style.SecondRow} ${Style.detailsCard}`}
+                     data-aos="fade-left"
+                  >
                      <div className={Style.detailContent}>
                         <div className={Style.detailsImg}>
                            <img
@@ -116,7 +128,12 @@ const Details = () => {
                         </div>
                      </div>
                   </Col>
-                  <Col lg={4} md={6} className={`${Style.SecondRow} ${Style.detailsCard}`}>
+                  <Col
+                     lg={4}
+                     md={6}
+                     className={`${Style.SecondRow} ${Style.detailsCard}`}
+                     data-aos="fade-left"
+                  >
                      <div className={Style.detailContent}>
                         <div className={Style.detailsImg}>
                            <img

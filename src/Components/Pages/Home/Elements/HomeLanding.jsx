@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Ripples from 'react-ripples'
+import Ripples from "react-ripples";
 import { Formik } from "formik";
 
 // img
@@ -9,13 +9,18 @@ import HomeImg from "../assest/Images/right.png";
 // scss
 import Style from "../assest/style/Style.module.scss";
 
+// Aos
+
+
 const HomeLanding = () => {
+ 
+
    return (
       <>
          <Container>
             <Row>
                <Col lg={7} className={Style.OrderMedia2}>
-                  <div className={Style.homeContent}>
+                  <div className={Style.homeContent} data-aos="fade-right">
                      <h1> Build better customer experiences with saasfy!</h1>
                      <p>
                         Everything you need to convert, support, your customers.
@@ -82,7 +87,7 @@ const HomeLanding = () => {
                   </div>
                </Col>
                <Col lg={5} className={Style.OrderMedia1}>
-                  <div className={Style.RightImg}>
+                  <div className={Style.RightImg}  data-aos="fade-left">
                      <img src={HomeImg} alt="" className={`${"img-fluid"}`} />
                   </div>
                </Col>

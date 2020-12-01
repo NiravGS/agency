@@ -12,12 +12,22 @@ const Support = () => {
          <Container>
             <Row className={`${"align-items-center"}`}>
                <Col lg={6}>
-                  <div className={Style.RightContent}>
+                  <div
+                     className={Style.RightContent}
+                     data-aos="fade-right"
+                     data-aos-offset="300"
+                     data-aos-easing="ease-in-sine"
+                  >
                      <img src={SupportImg} className={`${"img-fluid"}`} />
                   </div>
                </Col>
                <Col lg={6}>
-                  <div className={Style.LeftContent}>
+                  <div
+                     className={Style.LeftContent}
+                     data-aos="fade-left"
+                     data-aos-offset="300"
+                     data-aos-easing="ease-in-sine"
+                  >
                      <div className={Style.allLine}>
                         <div className={Style.leftSpaceLine}></div>
                         <div className={Style.leftLine}></div>

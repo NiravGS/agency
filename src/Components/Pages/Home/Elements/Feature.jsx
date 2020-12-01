@@ -30,7 +30,7 @@ const Feature = () => {
             </div>
             <Row>
                <Col md={6}>
-                  <div className={Style.Box}>
+                  <div className={Style.Box}  data-aos="flip-left">
                      <div className={Style.LeftSection}>
                         <div className={Style.sectionImg}>
                            <img
@@ -68,7 +68,7 @@ const Feature = () => {
                   </div>
                </Col>
                <Col md={6}>
-                  <div className={`${Style.Box} ${Style.MailBox}`}>
+                  <div className={`${Style.Box} ${Style.MailBox}`}  data-aos="flip-left">
                      <div className={Style.LeftSection}>
                         <div className={Style.sectionImg}>
                            <img

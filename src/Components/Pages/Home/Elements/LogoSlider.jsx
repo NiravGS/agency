@@ -59,7 +59,8 @@ const LogoSlider = () => {
             <div
                className={`${" d-flex align-items-center justify-content-center"} ${
                   Style.logoSection
-               }`}
+                  }`}
+                 
             >
                <div className={Style.leftLine} />
                <p>

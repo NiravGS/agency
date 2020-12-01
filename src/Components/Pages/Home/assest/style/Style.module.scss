@@ -572,15 +572,18 @@
 
         .Title {
             text-align: left;
-            h1{
-                @media(max-width:767px){
+
+            h1 {
+                @media(max-width:767px) {
                     text-align: center;
                 }
             }
+
             p {
                 margin: 40px 0;
                 max-width: 640px;
-                @media(max-width:767px){
+
+                @media(max-width:767px) {
                     margin: 20px auto;
                     text-align: center;
                 }
@@ -589,14 +592,91 @@
 
         .demoBtn {
             display: flex;
-            @media(max-width:767px){
+
+            @media(max-width:767px) {
                 justify-content: center;
             }
+
             .demoinnerBtn {
                 margin-left: 10px;
 
                 a {
                     background-color: #1fae96;
+                }
+            }
+        }
+    }
+}
+
+#PricePlan {
+    .pricePlan {
+        .switchButton {
+            .TabBtn {
+                text-align: center;
+
+                li {
+                    border: 0;
+                }
+            }
+        }
+
+        .switchBtnContent {
+            .PriceContent {
+                padding: 58px 30px;
+                border-radius: 4px;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 8px 13.856px 30px 0px rgba(105, 146, 234, 0.14);
+                p {
+                    font-size: 22px;
+                    color: #000;
+                    margin-bottom: 30px;
+                }
+
+                h1 {
+                    font-size: 55px;
+                    color: #ff6064;
+                    margin-bottom: 45px;
+                }
+
+                .sortInfo {
+                    font-size: 15px;
+                    color: #33475b;
+                    width: 100%;
+                    max-width: 267px;
+                }
+
+                .CheckContent {
+                    margin-bottom: 42px;
+
+                    .detailsContent {
+                        margin-bottom: 22px;
+                        display: flex;
+                        align-items: baseline;
+                        font-size: 10px;
+
+                        .iconCheck {
+                            color: #3cbe6f;
+                        }
+
+                        p {
+                            font-size: 15px;
+                            margin: 0 0 0 27px;
+                        }
+                    }
+                }
+            }
+
+            button {
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+                padding: 10px 35px;
+
+                .iconCheck {
+                    svg {
+                        font-size: 10px;
+                        margin-left: 10px;
+                    }
                 }
             }
         }
